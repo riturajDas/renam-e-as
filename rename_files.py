@@ -4,12 +4,12 @@ import os
 
 def rename_files(dir_in, rm_in):
     #get file names from the directory
-    file_list = os.listdir(uinput)
+    file_list = os.listdir(dir_in)
     #print file_list
     #get initial directory
     saved_path = os.getcwd()
     #change to directory with relevant files to rename
-    os.chdir(uinput)
+    os.chdir(dir_in)
 
     #rename files to names without numbers
     for file_name in file_list:
